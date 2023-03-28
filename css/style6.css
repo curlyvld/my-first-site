@@ -121,7 +121,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
   border-radius: 10px;
   padding:10px;
   text-align: center;
-  width:400px;
+  max-width:400px;
 }
 .login{
   display:block;
@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
   border-radius: 10px;
   padding:10px;
   text-align: center;
-  width:400px;
+  max-width:400px;
 }
 .content__block-password {
   display: flex;
@@ -153,7 +153,50 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
   font-family: "Rubik";
   box-shadow: 10px 5px 5px purple;
 }
-button:hover{
+.button:hover{
   background:rgb(22, 255, 251);
   box-shadow: 10px 5px 5px blue;
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    min-height: 80px;
+  }
+  .nav__menu-item {
+    margin-right: 20px;
+  }
+  .nav__menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav__menu-link, .nav__btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+ .title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .password{
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .login{
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .content__block-login,
+  .content__block-password,
+  .content__block-button {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    font-size: 12px;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+  }
 }
