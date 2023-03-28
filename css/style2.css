@@ -141,3 +141,56 @@ color:coral;
 .content__text:hover{
   text-decoration:underline;
 }
+
+@media (max-width: 767px) {
+  .header__container {
+    min-height: 80px;
+  }
+  .nav__menu-item {
+    margin-right: 20px;
+  }
+  .nav__menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav__menu-link, .nav__btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  .content__main {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .content__text-block {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 80%;
+    text-align: center;
+  }
+  .content__title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .content__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .content__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .content__image-block img{
+    height: auto;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .content__image-block p{
+    margin-bottom: 30px;
+  }
+}
