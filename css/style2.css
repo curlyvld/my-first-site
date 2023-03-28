@@ -185,7 +185,9 @@ color:coral;
     padding-top: 30px;
     text-align: center;
   }
-  .content__image-block img{
+ .content__image-block img{
+    display: flex;
+    justify-content: center;
     height: auto;
     margin: 0 auto;
     max-width: 80%;
